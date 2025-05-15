@@ -1,3 +1,17 @@
+<?php
+session_start();
+
+// Jika belum login, arahkan ke login
+if (!isset($_SESSION['id_user'])) {
+    header("Location: login.php");
+    exit;
+} else {
+    // Jika sudah login, arahkan ke beranda
+    header("Location: index.php");
+    exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="id">
 <head>

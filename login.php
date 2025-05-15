@@ -61,7 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <label class="text-muted" for="floatingPassword">Password</label>
             
           </div>
-          <button type="submit" href="home.php" class="btn btn-success w-100">Login</button>
+          <button type="submit" href="index.php" class="btn btn-success w-100">Login</button>
           <?php
           if (isset($_GET['error'])) {
             echo '<div class="alert alert-danger mt-3" role="alert">Login gagal. Email, NIK, atau Password salah!</div>';
