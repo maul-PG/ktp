@@ -1,13 +1,7 @@
 <?php
 session_start();
 include "koneksi.php";
-
 $id_user = $_SESSION['id_user'] ?? null;
-
-if (!$id_user) {
-    echo "<script>alert('Silakan login terlebih dahulu'); window.location.href='login.php';</script>";
-    exit;
-}
 
 $query = "SELECT * FROM daftar WHERE id_user = '$id_user'";
 $result = mysqli_query($conn, $query);
@@ -53,7 +47,7 @@ if (!$data) {
   <div class="card-footer text-center">
     <div class="d-flex justify-content-between">
         <a href="edit_data.php" class="btn btn-primary flex-fill mx-1">Edit Data</a>
-        <a href="home.php" class="btn btn-secondary flex-fill mx-1">Kembali ke Beranda</a>
+        <a href="index.php" class="btn btn-secondary flex-fill mx-1">Kembali ke Beranda</a>
         <a href="logout.php" class="btn btn-danger flex-fill mx-1">Logout</a>
     </div>
     <p class="text-muted mt-2">© 2025 e-KTP Remaja</p>

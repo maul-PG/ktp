@@ -16,7 +16,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto align-items-center">
-          <li class="nav-item"><a class="nav-link" href="home.php">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.php">Beranda</a></li>
           <li class="nav-item"><a class="nav-link" href="tentang.php">Tentang</a></li>
           <li class="nav-item"><a class="nav-link active" href="cara_daftar.php">Cara Daftar</a></li>
           <li class="nav-item"><a class="nav-link" href="data_remaja.php">Data Remaja</a></li>

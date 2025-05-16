@@ -1,13 +1,11 @@
 <?php
 session_start();
+include "koneksi.php";
 
-// Jika belum login, arahkan ke login
-if (!isset($_SESSION['id_user'])) {
-    header("Location: login.php");
-    exit;
-} else {
-    // Jika sudah login, arahkan ke beranda
-    header("Location: index.php");
+$id_user = $_SESSION['id_user'] ?? null;
+
+if (!$id_user) {
+    echo "<script>alert('Silakan login terlebih dahulu'); window.location.href='login.php';</script>";
     exit;
 }
 ?>
@@ -31,10 +29,10 @@ if (!isset($_SESSION['id_user'])) {
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto align-items-center">
-          <li class="nav-item"><a class="nav-link active" href="home.php">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link active" href="index.php">Beranda</a></li>
           <li class="nav-item"><a class="nav-link" href="tentang.php">Tentang</a></li>
           <li class="nav-item"><a class="nav-link" href="cara_daftar.php">Cara Daftar</a></li>
-          <li class="nav-item"><a class="nav-link" href="cara_daftar.php">Data Remaja</a></li>
+          <li class="nav-item"><a class="nav-link" href="data_remaja.php">Data Remaja</a></li>
           <li class="nav-item">
             <a class="btn btn-danger ms-3" href="logout.php">Logout</a>
           </li>

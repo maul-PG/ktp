@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $data = mysqli_fetch_assoc($result);
     $_SESSION['id_user'] = $data['id_user'];
     $_SESSION['email'] = $data['email'];
-    header("Location: home.php");
+    header("Location: index.php");
     exit;
   } else {
     echo "<script>alert('Login gagal. Email, NIK, atau Password salah!');</script>";

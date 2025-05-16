@@ -4,10 +4,6 @@ include "koneksi.php";
 
 $id_user = $_SESSION['id_user'] ?? null;
 
-if (!$id_user) {
-    echo "<script>alert('Silakan login terlebih dahulu'); window.location.href='login.php';</script>";
-    exit;
-}
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nama_lengkap = $_POST['nama_lengkap'];
