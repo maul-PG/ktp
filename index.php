@@ -1,4 +1,6 @@
 <?php
+header("Location: halamanD.php");
+
 session_start();
 include "koneksi.php";
 
@@ -44,7 +46,8 @@ if (!$id_user) {
  
 
   <!-- Hero Section -->
-  <section class="text-center py-5 bg-image min-vh-100 d-flex align-items-center justify-content-center" style= "background-image: url('img/ktp-hm.png')">
+ <section class="text-center py-5 min-vh-100 d-flex flex-column align-items-center justify-content-center"
+  style="background-image: url('img/ktp-hm.png'); background-repeat: no-repeat; background-size: cover; background-position: center; padding-top: 120px;">
     <div>
       <h1 class="fw-bold display-5">Pendataan Remaja Non-KTP</h1>
       <p class="lead">Membantu remaja mendapatkan identitas resmi dengan mudah dan cepat.</p>

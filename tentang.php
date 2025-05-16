@@ -11,7 +11,7 @@
     <!-- Navbar -->
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container-fluid px-5">
-      <a class="navbar-brand fw-bold" href="home.html">e-KTP Remaja</a>
+      <a class="navbar-brand fw-bold" href="index.php">e-KTP Remaja</a>
       <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -30,7 +30,8 @@
   </nav>
 
     <!-- Hero Section -->
-    <section class="text-center py-5 bg-image min-vh-100 d-flex align-items-center justify-content-center" style="background-image: url('img/ktp-hm.png')">
+<section class="text-center py-5 min-vh-100 d-flex flex-column align-items-center justify-content-center"
+  style="background-image: url('img/ktp-hm.png'); background-repeat: no-repeat; background-size: cover; background-position: center; padding-top: 120px;">
         <div>
             <h1 class="fw-bold display-5">Tentang e-KTP Remaja</h1>
             <p class="lead">e-KTP Remaja adalah platform yang memudahkan remaja untuk mendapatkan identitas resmi dengan cepat dan mudah.</p>

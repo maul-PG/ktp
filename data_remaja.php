@@ -47,7 +47,8 @@ $query = mysqli_query($conn, "SELECT * FROM daftar");
 </nav>
 
 <!-- Hero Section + Table -->
-<section class="text-center py-5 min-vh-100 d-flex flex-column align-items-center justify-content-start" style="background-image: url('img/ktp-hm.png'); background-size: cover; padding-top: 120px;">
+<section class="text-center py-5 min-vh-100 d-flex flex-column align-items-center justify-content-start"
+  style="background-image: url('img/ktp-hm.png'); background-repeat: no-repeat; background-size: cover; background-position: center; padding-top: 120px;">
   <div class="mb-4">
     <h1 class="fw-bold display-5">Data Remaja</h1>
     <p class="lead">Daftar remaja yang telah mendaftar e-KTP</p>
