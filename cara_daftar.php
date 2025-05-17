@@ -8,54 +8,81 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container-fluid px-5">
-      <a class="navbar-brand fw-bold" href="home.php">e-KTP Remaja</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow">
+      <div class="container-fluid px-5">
+      <a class="navbar-brand fw-bold d-flex align-items-center text-black" href="index.php">
+        <img src="img/ktp.png" alt="Logo KTP" width="36" height="36" class="me-2">
+        e-KTP Remaja
+      </a>
       <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto align-items-center">
-          <li class="nav-item"><a class="nav-link" href="index.php">Beranda</a></li>
-          <li class="nav-item"><a class="nav-link" href="tentang.php">Tentang</a></li>
-          <li class="nav-item"><a class="nav-link active" href="cara_daftar.php">Cara Daftar</a></li>
-          <li class="nav-item"><a class="nav-link" href="data_remaja.php">Data Remaja</a></li>
-          <li class="nav-item">
-            <a class="btn btn-danger ms-3" href="logout.php">Logout</a>
-          </li>
-        </ul>
+        <li class="nav-item"><a class="nav-link text-black" href="index.php">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link text-black" href="tentang.php">Tentang</a></li>
+        <li class="nav-item"><a class="nav-link active fw-bold text-black" href="cara_daftar.php">Cara Daftar</a></li>
+        <li class="nav-item"><a class="nav-link text-black" href="data_remaja.php">Data Remaja</a></li>
+        <li class="nav-item">
+          <a class="btn btn-dark text-white ms-3 fw-bold" href="logout.php">Logout</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-<!-- Hero Section -->
+<!-- Hero Section dan cara daftar-->
 <section class="text-center py-5 min-vh-100 d-flex flex-column align-items-center justify-content-center"
   style="background-image: url('img/ktp-hm.png'); background-repeat: no-repeat; background-size: cover; background-position: center; padding-top: 120px;">
-    <div>
-        <h1 class="fw-bold display-5">Cara Daftar e-KTP Remaja</h1>
-        <p class="lead">Ikuti langkah-langkah berikut untuk mendaftar e-KTP Remaja.</p>
+    <div class="bg-white bg-opacity-75 rounded p-4 shadow" style="max-width: 700px;">
+        <h1 class="fw-bold mb-3" style="font-size:2rem;">Cara Daftar e-KTP Remaja</h1>
+        <ol class="text-start fs-5">
+            <li>
+                <b>Login ke Aplikasi</b><br>
+                <ul>
+                    <li>Buka aplikasi e-KTP Remaja di browser Anda.</li>
+                    <li>Pada halaman login, masukkan <b>username</b> dan <b>password</b> yang sudah Anda daftarkan sebelumnya.</li>
+                    <li>Klik tombol <b>Login</b> untuk masuk ke dalam aplikasi.</li>
+                    <li>Jika belum memiliki akun, klik <b>Daftar</b> dan lengkapi formulir pendaftaran, lalu lakukan login setelah akun berhasil dibuat.</li>
+                </ul>
+            </li>
+            <li class="mt-3">
+                <b>Mengisi Data Diri Remaja</b><br>
+                <ul>
+                    <li>Setelah berhasil login, Anda akan diarahkan ke halaman utama aplikasi.</li>
+                    <li>Pilih menu <b>Data Remaja</b> di bagian navigasi.</li>
+                    <li>Klik tombol <b>Tambah Data</b> untuk mulai mengisi data diri.</li>
+                    <li>Isi seluruh kolom pada formulir data diri, seperti nama lengkap, NIK, tanggal lahir, alamat, dan data lain yang diminta.</li>
+                    <li>Pastikan semua data yang diisi sudah benar dan lengkap.</li>
+                    <li>Setelah selesai, klik tombol <b>Simpan</b> untuk menyimpan data Anda.</li>
+                </ul>
+            </li>
+            <li class="mt-3">
+                <b>Mengedit Data Diri</b><br>
+                <ul>
+                    <li>Jika terdapat kesalahan atau perubahan pada data yang sudah diinput, Anda dapat memperbaikinya.</li>
+                    <li>Pada halaman <b>Data Remaja</b>, cari data yang ingin diedit.</li>
+                    <li>Klik tombol <b>Edit</b> di samping data tersebut.</li>
+                    <li>Lakukan perubahan pada kolom yang diperlukan.</li>
+                    <li>Setelah selesai mengedit, klik <b>Update</b> atau <b>Simpan</b> untuk memperbarui data.</li>
+                </ul>
+            </li>
+            <li class="mt-3">
+                <b>Logout dari Aplikasi</b><br>
+                <ul>
+                    <li>Setelah semua proses selesai, klik tombol <b>Logout</b> yang biasanya terletak di pojok kanan atas aplikasi.</li>
+                    <li>Dengan logout, Anda keluar dari aplikasi dan akun Anda menjadi lebih aman.</li>
+                </ul>
+            </li>
+        </ol>
+        <p class="mt-4 mb-0 text-secondary">Pastikan semua data yang diisi sudah benar sebelum logout. Jika ada kendala, hubungi admin aplikasi.</p>
     </div>
 </section>
 
-<!-- Content Section -->
 
-<!-- Steps Section -->
-<section class="container my-5">
-    <h2 class="text-center mb-4">Langkah-langkah Pendaftaran</h2>
-    <ol class="list-group
-    list-group-numbered">
-        <li class="list-group-item">Kunjungi situs resmi e-KTP Remaja.</li>
-        <li class="list-group-item">Klik tombol "Daftar Sekarang" di halaman utama.</li>
-        <li class="list-group-item">Isi formulir pendaftaran dengan data diri yang valid.</li>
-        <li class="list-group-item">Verifikasi email Anda melalui tautan yang dikirimkan.</li>
-        <li class="list-group-item">Masuk ke akun Anda menggunakan email dan password yang telah didaftarkan.</li>
-        <li class="list-group-item">Lengkapi data diri dan unggah dokumen yang diperlukan.</li>
-        <li class="list-group-item">Tunggu konfirmasi dari tim e-KTP Remaja.</li>
-        <li class="list-group-item">Setelah disetujui, Anda akan menerima e-KTP Remaja melalui email.</li>
-    </ol>
-</section>
+
 <!-- Footer -->
-<footer class="text-white text-center py-3 bg-secondary">
+<footer class="text-white text-center py-3 bg-dark">
     <p class="mb-0">&copy; 2025 e-KTP Remaja</p>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

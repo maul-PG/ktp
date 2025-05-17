@@ -3,22 +3,42 @@ session_start();
 include "koneksi.php"; 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $email = $_POST['email'];
-  $nik = $_POST['nik'];
+  $email = mysqli_real_escape_string($conn, $_POST['email']);
+  $nik = mysqli_real_escape_string($conn, $_POST['nik']);
   $password = $_POST['password'];
 
- 
-  $query = "SELECT * FROM user WHERE email = '$email' AND nik = '$nik' AND password = '$password'";
+  // Debug: Check submitted values
+  // error_log("Email: $email, NIK: $nik, Password: $password");
+
+  $query = "SELECT * FROM user WHERE email = '$email' OR nik = '$nik'";
   $result = mysqli_query($conn, $query);
+
+  if (!$result) {
+    die("Query failed: " . mysqli_error($conn));
+  }
 
   if (mysqli_num_rows($result) == 1) {
     $data = mysqli_fetch_assoc($result);
-    $_SESSION['id_user'] = $data['id_user'];
-    $_SESSION['email'] = $data['email'];
-    header("Location: index.php");
-    exit;
+    
+    // Debug: Check database values
+    // error_log("DB Password Hash: " . $data['password']);
+    
+    // Simple password comparison for now (since password isn't hashed in DB)
+    if(($data['email'] === $email || $data['nik'] === $nik) && $data['password'] === $password) {
+      $_SESSION['login'] = true;
+      $_SESSION['id_user'] = $data['id_user'];
+      $_SESSION['email'] = $data['email'];
+      $_SESSION['role'] = $data['role'];
+      
+      header("Location: index.php");
+      exit();
+    } else {
+      header("Location: login.php?error=1");
+      exit();
+    }
   } else {
-    echo "<script>alert('Login gagal. Email, NIK, atau Password salah!');</script>";
+    header("Location: login.php?error=1");
+    exit();
   }
 }
 ?>
