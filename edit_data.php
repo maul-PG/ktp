@@ -50,6 +50,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 ?>
 
+<!-- Formulir Edit Data KTP Remaja -->
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -60,8 +62,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <body>
 <div class="container mt-5" style="max-width: 750px;">
     <div class="card shadow rounded-4">
-        <div class="card-header bg-primary text-white text-center">
-            <h4>Edit Data e-KTP Remaja</h4>
+        <div class="card-header text-dark fw text-center">
+            <h4 class="fw-bold">Edit Data e-KTP Remaja</h4>
         </div>
         <div class="card-body">
             <form method="POST">
@@ -138,7 +140,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         </select>
                     </div>
                 </div>
-                <div class="d-grid gap-2 mt-4">
+                <div class="d-flex justify-content-beetwen gap-2 mt-4">
                     <button type="submit" class="btn btn-success">Simpan Perubahan</button>
                     <a href="cekDataAnda.php" class="btn btn-secondary">Kembali</a>
                 </div>

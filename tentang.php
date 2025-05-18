@@ -75,14 +75,14 @@
             <li><strong>Email:</strong> info@ektp-remaja.id</li>
             <li><strong>Telp:</strong> (021) 123-4567</li>
             <li><strong>WA:</strong> +62 812-3456-7890</li>
-            <li><strong>Alamat:</strong> Jl. Merdeka No. 17, Jakarta</li>
+            <li><strong>Alamat:</strong> Jl. SeturanRaya No. 1, Yogyakarta</li>
           </ul>
         </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- Bootstrap JS (needed for modal) -->
+      <!-- Bootstrap JS untuk modal -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <footer class="text-white text-center py-3 bg-dark">

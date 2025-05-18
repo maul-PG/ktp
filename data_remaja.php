@@ -107,7 +107,7 @@ $query = mysqli_query($conn, "SELECT * FROM daftar");
       </div>
     </nav>
 
-<!-- Hero Section + Table -->
+<!-- Hero Section dan TableTabel -->
 <section class="text-center min-vh-100 d-flex flex-column align-items-center justify-content-start"
   style="background-image: url('img/ktp-hm.png'); background-repeat: no-repeat; background-size: cover; background-position: center; padding-top: 100px;">
   <div class="mb-4">
@@ -184,7 +184,12 @@ $query = mysqli_query($conn, "SELECT * FROM daftar");
   <p class="mb-0">&copy; 2025 e-KTP Remaja</p>
 </footer>
 
+<!-- Bootstrap JS -->
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!--sorting tabel-->
+
 <script>
   $(document).ready(function () {
     $('#tabelRemaja').DataTable({
@@ -273,6 +278,8 @@ $query = mysqli_query($conn, "SELECT * FROM daftar");
     </div>
   </div>
 </div>
+
+<!-- Modal Edit Profil Script -->
 
 <script>
 function showProfilModal(

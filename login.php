@@ -7,8 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $nik = mysqli_real_escape_string($conn, $_POST['nik']);
   $password = $_POST['password'];
 
-  // Debug: Check submitted values
-  // error_log("Email: $email, NIK: $nik, Password: $password");
+  // memastikan email dan nik tidak kosong
 
   $query = "SELECT * FROM user WHERE email = '$email' OR nik = '$nik'";
   $result = mysqli_query($conn, $query);
@@ -20,10 +19,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (mysqli_num_rows($result) == 1) {
     $data = mysqli_fetch_assoc($result);
     
-    // Debug: Check database values
-    // error_log("DB Password Hash: " . $data['password']);
-    
-    // Simple password comparison for now (since password isn't hashed in DB)
+   // tempat membaca password dari database
+   //karena password sudah ditentukan di database
     if(($data['email'] === $email || $data['nik'] === $nik) && $data['password'] === $password) {
       $_SESSION['login'] = true;
       $_SESSION['id_user'] = $data['id_user'];
@@ -42,6 +39,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   }
 }
 ?>
+
+<!-- HTML untuk halaman login -->
 
 <!doctype html>
 <html lang="en">

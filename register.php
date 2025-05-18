@@ -1,6 +1,9 @@
 <?php
 include "koneksi.php";
 
+//tempat koneksi ke database
+// Cek apakah form registrasi sudah disubmit
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $nik = $_POST['nik'];
@@ -20,6 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
+<!-- HTML untuk halaman registrasi -->
 
 <!DOCTYPE html>
 <html lang="en">

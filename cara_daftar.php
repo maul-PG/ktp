@@ -32,50 +32,50 @@
     </nav>
 
 <!-- Hero Section dan cara daftar-->
-<section class="text-center py-5 min-vh-100 d-flex flex-column align-items-center justify-content-center"
-  style="background-image: url('img/ktp-hm.png'); background-repeat: no-repeat; background-size: cover; background-position: center; padding-top: 120px;">
+<section class="text-center min-vh-100 d-flex flex-column align-items-center justify-content-center"
+  style="background-image: url('img/ktp-hm.png'); background-repeat: no-repeat; background-size: cover; background-position: center; padding-top: 120px; padding-bottom: 60px;">
     <div class="bg-white bg-opacity-75 rounded p-4 shadow" style="max-width: 700px;">
         <h1 class="fw-bold mb-3" style="font-size:2rem;">Cara Daftar e-KTP Remaja</h1>
         <ol class="text-start fs-5">
             <li>
                 <b>Login ke Aplikasi</b><br>
                 <ul>
-                    <li>Buka aplikasi e-KTP Remaja di browser Anda.</li>
-                    <li>Pada halaman login, masukkan <b>username</b> dan <b>password</b> yang sudah Anda daftarkan sebelumnya.</li>
-                    <li>Klik tombol <b>Login</b> untuk masuk ke dalam aplikasi.</li>
+                    <li>Buka website e-KTP Remaja di browser Anda.</li>
+                    <li>Pada halaman login, masukkan <b>email</b><b>, NIK</b> dan <b>password</b> yang sudah Anda daftarkan sebelumnya.</li>
+                    <li>Klik tombol <b>Login</b> untuk masuk ke dalam website.</li>
                     <li>Jika belum memiliki akun, klik <b>Daftar</b> dan lengkapi formulir pendaftaran, lalu lakukan login setelah akun berhasil dibuat.</li>
                 </ul>
             </li>
             <li class="mt-3">
                 <b>Mengisi Data Diri Remaja</b><br>
                 <ul>
-                    <li>Setelah berhasil login, Anda akan diarahkan ke halaman utama aplikasi.</li>
-                    <li>Pilih menu <b>Data Remaja</b> di bagian navigasi.</li>
-                    <li>Klik tombol <b>Tambah Data</b> untuk mulai mengisi data diri.</li>
+                    <li>Setelah berhasil login, Anda akan diarahkan ke halaman utama website.</li>
+                    <li>Pilih menu <b>Beranda</b> di bagian navigasi.</li>
+                    <li>Klik tombol <b>Daftar Sekarang</b> untuk mulai mengisi data diri.</li>
                     <li>Isi seluruh kolom pada formulir data diri, seperti nama lengkap, NIK, tanggal lahir, alamat, dan data lain yang diminta.</li>
                     <li>Pastikan semua data yang diisi sudah benar dan lengkap.</li>
-                    <li>Setelah selesai, klik tombol <b>Simpan</b> untuk menyimpan data Anda.</li>
+                    <li>Setelah selesai, klik tombol <b>Kirim Data</b> untuk menyimpan data Anda.</li>
                 </ul>
             </li>
             <li class="mt-3">
                 <b>Mengedit Data Diri</b><br>
                 <ul>
                     <li>Jika terdapat kesalahan atau perubahan pada data yang sudah diinput, Anda dapat memperbaikinya.</li>
-                    <li>Pada halaman <b>Data Remaja</b>, cari data yang ingin diedit.</li>
-                    <li>Klik tombol <b>Edit</b> di samping data tersebut.</li>
+                    <li>Pada halaman <b>Cek Data Anda</b>, cari data yang ingin diedit.</li>
+                    <li>Klik tombol <b>Edit</b> di bawah data tersebut.</li>
                     <li>Lakukan perubahan pada kolom yang diperlukan.</li>
-                    <li>Setelah selesai mengedit, klik <b>Update</b> atau <b>Simpan</b> untuk memperbarui data.</li>
+                    <li>Setelah selesai mengedit, klik <b>Simpan Perubahan</b> untuk memperbarui data.</li>
                 </ul>
             </li>
             <li class="mt-3">
                 <b>Logout dari Aplikasi</b><br>
                 <ul>
-                    <li>Setelah semua proses selesai, klik tombol <b>Logout</b> yang biasanya terletak di pojok kanan atas aplikasi.</li>
-                    <li>Dengan logout, Anda keluar dari aplikasi dan akun Anda menjadi lebih aman.</li>
+                    <li>Setelah semua proses selesai, klik tombol <b>Logout</b> yang terletak di pojok kanan atas website.</li>
+                    <li>Dengan logout, Anda keluar dari website dan akun Anda menjadi lebih aman.</li>
                 </ul>
             </li>
         </ol>
-        <p class="mt-4 mb-0 text-secondary">Pastikan semua data yang diisi sudah benar sebelum logout. Jika ada kendala, hubungi admin aplikasi.</p>
+        <p class="mt-4 mb-0 text-secondary">Pastikan semua data yang diisi sudah benar sebelum logout. Jika ada kendala, hubungi admin website.</p>
     </div>
 </section>
 

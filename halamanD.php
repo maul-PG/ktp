@@ -112,7 +112,7 @@ if(isset($_SESSION['login']) && $_SESSION['login'] === true) {
                     <img src="img/pemuda2_1.jpg" class="d-block w-100" alt="Slide 1">
                     <div class="carousel-caption text-start">
                         <h1>Selamat Datang di e-KTP Remaja</h1>
-                        <p>Platform mudah dan cepat untuk pendaftaran e-KTP bagi remaja.</p>
+                        <p>Platform mudah dan cepat untuk pendataan e-KTP bagi remaja.</p>
                         <p><a class="btn btn-primary btn-lg" href="register.php">Daftar Sekarang</a></p>
                     </div>
                 </div>
@@ -120,7 +120,7 @@ if(isset($_SESSION['login']) && $_SESSION['login'] === true) {
                     <img src="img/daftar2_1.jpg" class="d-block w-100" alt="Slide 2">
                     <div class="carousel-caption">
                         <h1>Mudah dan Aman</h1>
-                        <p>Proses pendaftaran e-KTP tanpa ribet dan lebih aman.</p>
+                        <p>Proses pendataan e-KTP tanpa ribet dan lebih aman.</p>
                         <p>
                             <a class="btn btn-primary btn-lg" href="#" id="btnPelajariFitur" data-bs-toggle="modal" data-bs-target="#fiturModal">Pelajari Fitur</a>
                         </p>
@@ -194,10 +194,10 @@ if(isset($_SESSION['login']) && $_SESSION['login'] === true) {
                       </div>
                       <div class="modal-body">
                         <p>
-                          Website <b>e-KTP Remaja</b> dibuat sebagai solusi atas kebutuhan proses pendaftaran KTP remaja yang selama ini masih dilakukan secara manual dan seringkali memakan waktu, tenaga, serta rentan terjadi kesalahan data. 
+                          Website <b>e-KTP Remaja</b> dibuat sebagai solusi atas kebutuhan proses pendataan KTP remaja yang selama ini masih dilakukan secara manual dan seringkali memakan waktu, tenaga, serta rentan terjadi kesalahan data. 
                         </p>
                         <p>
-                          Latar belakang pembuatan aplikasi ini adalah untuk memudahkan remaja Indonesia dalam melakukan pendaftaran e-KTP secara online, sehingga prosesnya menjadi lebih praktis, efisien, aman, dan transparan. Dengan sistem digital, pengguna dapat mengisi data diri, memantau status pengajuan, serta mendapatkan informasi terbaru seputar e-KTP tanpa harus datang langsung ke kantor kelurahan.
+                          Latar belakang pembuatan website ini adalah untuk memudahkan remaja Indonesia dalam melakukan pendataan e-KTP secara online, sehingga prosesnya menjadi lebih praktis, efisien, aman, dan transparan. Dengan sistem digital, pengguna dapat mengisi data diri, memantau status pengajuan, serta mendapatkan informasi terbaru seputar e-KTP tanpa harus datang langsung ke kantor kelurahan.
                         </p>
                         <p>
                           Selain itu, aplikasi ini juga mendukung upaya pemerintah dalam digitalisasi layanan publik dan perlindungan data pribadi masyarakat. Dengan adanya <b>e-KTP Remaja</b>, diharapkan proses administrasi kependudukan menjadi lebih modern dan mudah diakses oleh generasi muda.
@@ -210,13 +210,13 @@ if(isset($_SESSION['login']) && $_SESSION['login'] === true) {
                   </div>
                 </div>
                 <style>
-                  /* Optional: agar modal-content tetap terlihat jelas */
+                    /: agar modal lebih besar */
                   #tentangKamiModal .modal-content {
                     box-shadow: 0 0 32px 8px rgba(0,0,0,0.3);
                   }
                 </style>
                 <script>
-                  // Optional: open modal via JS if needed elsewhere
+                  // Menampilkan modal ketika tombol "Tentang Kami" diklik
                   document.addEventListener('DOMContentLoaded', function() {
                     var btnTentang = document.getElementById('btnTentangKami');
                     if (btnTentang) {
@@ -228,6 +228,7 @@ if(isset($_SESSION['login']) && $_SESSION['login'] === true) {
                     }
                   });
                 </script>
+
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -245,7 +246,7 @@ if(isset($_SESSION['login']) && $_SESSION['login'] === true) {
         <div class="container py-5" id="Fitur" style="padding-top: 100px; scroll-margin-top: 100px;">
             <div class="row row-cols-1 row-cols-md-2 align-items-center g-5">
             <div class="col d-flex flex-column align-items-start gap-3">
-                <h2 class="fw-bold text-body-emphasis">Kenalan Yuk dengan Aplikasi e-KTP Remaja</h2>
+                <h2 class="fw-bold text-body-emphasis">Kenalan Yuk dengan Website e-KTP Remaja</h2>
                 <p class="text-body-secondary">Aplikasi ini memudahkan proses pendataan KTP remaja secara online. Praktis, aman, dan mudah dipantau!</p>
                 <a href="#" class="btn btn-primary btn-lg" id="btnKenalanYuk">Kenalan Yuk</a>
             </div>
@@ -294,8 +295,8 @@ if(isset($_SESSION['login']) && $_SESSION['login'] === true) {
                 </div>
                 <div class="modal-body">
                 <p>
-                    Selamat datang di aplikasi <b>e-KTP Remaja</b>!<br><br>
-                    Platform ini hadir untuk memudahkan remaja Indonesia dalam melakukan pendaftaran KTP secara online. Dengan fitur yang praktis, data yang aman, dan proses yang transparan, kamu bisa memantau status pengajuan KTP-mu kapan saja dan di mana saja.<br><br>
+                    Selamat datang di website <b>e-KTP Remaja</b>!<br><br>
+                    Platform ini hadir untuk memudahkan remaja Indonesia dalam melakukan pendataan KTP secara online. Dengan fitur yang praktis, data yang aman, dan proses yang transparan, kamu bisa memantau status pengajuan KTP-mu kapan saja dan di mana saja.<br><br>
                     Yuk, mulai perjalanan digitalmu bersama e-KTP Remaja dan rasakan kemudahan layanan kependudukan modern!
                 </p>
                 </div>
@@ -314,12 +315,11 @@ if(isset($_SESSION['login']) && $_SESSION['login'] === true) {
             }
             });
         </script>
-        <!--  -->
+      
         
         <hr class="md-5">
 
-        <!-- tempat berita -->
-    
+    <!-- tempat berita -->
 
 <div class="container py-4" id="Artikel" style="padding-top: 100px; scroll-margin-top: 100px;">
     <h3 class="mb-4 text-body-emphasis">Berita Terbaru</h3>
@@ -456,8 +456,8 @@ if(isset($_SESSION['login']) && $_SESSION['login'] === true) {
             <div class="modal-body">
                 <div class="row mb-4">
                     <div class="col-md-6 d-flex flex-column align-items-center border-end">
-                        <img src="https://via.placeholder.com/150" alt="Profil Maulana" class="img-fluid rounded-circle mb-2">
-                        <h5>Maulana</h5>
+                        <img src="img/foto_almet.jpeg" alt="Profil Maulana" class="img-fluid rounded-circle mb-2" style="width: 150px; height: 160px;">
+                        <h5> Rafi'i Maulana</h5>
                         <p class="mb-1">Email: maulanarafii036@gmail.com</p>
                         <p class="mb-1">Nomor Telepon: 082231727744</p>
                         <p class="mb-1">Alamat: Jl. Glagahsari No. 68, Yogyakarta</p>
@@ -470,7 +470,7 @@ if(isset($_SESSION['login']) && $_SESSION['login'] === true) {
                         </div>
                     </div>
                     <div class="col-md-6 d-flex flex-column align-items-center">
-                        <img src="https://via.placeholder.com/150" alt="Profil Siti" class="img-fluid rounded-circle mb-2">
+                        <img src="img/gara_foto.jpeg" alt="Profil Siti" class="img-fluid rounded-circle mb-2" style="width: 150px; height: 160px;">
                         <h5>Hanggara Winasis</h5>
                         <p class="mb-1">Email: HanggaraW@gmail.com</p>
                         <p class="mb-1">Nomor Telepon: 08129876543</p>
@@ -490,7 +490,7 @@ if(isset($_SESSION['login']) && $_SESSION['login'] === true) {
 </div>
 
 <script>
-    // Buka modal profil jika klik menu navbar "Profil" tanpa scroll ke bawah
+    // modalprofil untuk profil pembuat
     document.addEventListener('DOMContentLoaded', function() {
         var profilLink = document.querySelector('a[href="#profil"]');
         if (profilLink) {
