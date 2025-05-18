@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-// If user is already logged in, redirect to index.php
+//untuk login ke halaman utama index.php
 if(isset($_SESSION['login']) && $_SESSION['login'] === true) {
     header("Location: index.php");
     exit();
@@ -430,29 +430,20 @@ if(isset($_SESSION['login']) && $_SESSION['login'] === true) {
             <ul class="list-unstyled">
             <li><i class="bi bi-envelope-fill"></i> Email: e-ktpremaja@gmail.com</li>
             <li><i class="bi bi-telephone-fill"></i> Telepon: +62 123 4567 890</li>
-            <li>
-                <i class="bi bi-instagram"></i> Instagram: 
-                <a href="https://instagram.com/eKTPRemaja" target="_blank" class="text-dark">@eKTPRemaja</a>
-            </li>
-            <li>
-                <i class="bi bi-github"></i> GitHub: 
-                <a href="https://github.com/eKTPRemaja" target="_blank" class="text-dark">eKTPRemaja</a>
-            </li>
             </ul>
             <div class="mt-4">
             <h5 class="mb-2">Alamat Kantor</h5>
-            <p class="text-body-secondary mb-2">Jl. Contoh No. 123, Jakarta</p>
+            <p class="text-body-secondary mb-2">Jl. SeturanRaya No. 1, Yogyakarta</p>
             <div class="ratio ratio-16x9 rounded shadow-sm">
                 <iframe 
-                src="https://www.google.com/maps?q=Jl.+Contoh+No.+123,+Jakarta&output=embed" 
+                src="https://www.google.com/maps?q=Jl.+SeturanRaya+No.+1,+Yogyakarta&output=embed" 
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             </div>
         </div>
-        
-<!--Profil-->
-<!-- Profil Pembuat (Popup Modal Saja, Tidak Bisa Diedit, Layout Kanan-Kiri) -->
+
+<!-- Profil Pembuat -->
 
 <!-- Modal Profil Pembuat -->
 <div class="modal fade" id="profilModal" tabindex="-1" aria-labelledby="profilModalLabel" aria-hidden="true">
@@ -464,33 +455,32 @@ if(isset($_SESSION['login']) && $_SESSION['login'] === true) {
             </div>
             <div class="modal-body">
                 <div class="row mb-4">
-                    <!-- Maulana kiri, Siti kanan -->
                     <div class="col-md-6 d-flex flex-column align-items-center border-end">
                         <img src="https://via.placeholder.com/150" alt="Profil Maulana" class="img-fluid rounded-circle mb-2">
                         <h5>Maulana</h5>
-                        <p class="mb-1">Email: maulana@gmail.com</p>
-                        <p class="mb-1">Nomor Telepon: 08123456789</p>
-                        <p class="mb-1">Alamat: Jl. Contoh No. 123, Jakarta</p>
-                        <p class="mb-1">Tanggal Lahir: 01 Januari 2000</p>
+                        <p class="mb-1">Email: maulanarafii036@gmail.com</p>
+                        <p class="mb-1">Nomor Telepon: 082231727744</p>
+                        <p class="mb-1">Alamat: Jl. Glagahsari No. 68, Yogyakarta</p>
+                        <p class="mb-1">Tanggal Lahir: 18 Juni 2005</p>
                         <p class="mb-1">Jenis Kelamin: Laki-laki</p>
                         <p class="mb-2">Status: Aktif</p>
                         <div>
-                            <a href="https://instagram.com/maulana_ig" target="_blank" class="text-dark me-2"><i class="bi bi-instagram fs-4"></i></a>
-                            <a href="https://github.com/maulana_github" target="_blank" class="text-dark"><i class="bi bi-github fs-4"></i></a>
+                            <a href="https://instagram.com/raf.maul" target="_blank" class="text-dark me-2"><i class="bi bi-instagram fs-4"></i></a>
+                            <a href="https://github.com/maul-PG" target="_blank" class="text-dark"><i class="bi bi-github fs-4"></i></a>
                         </div>
                     </div>
                     <div class="col-md-6 d-flex flex-column align-items-center">
                         <img src="https://via.placeholder.com/150" alt="Profil Siti" class="img-fluid rounded-circle mb-2">
-                        <h5>Siti Aisyah</h5>
-                        <p class="mb-1">Email: siti@gmail.com</p>
+                        <h5>Hanggara Winasis</h5>
+                        <p class="mb-1">Email: HanggaraW@gmail.com</p>
                         <p class="mb-1">Nomor Telepon: 08129876543</p>
-                        <p class="mb-1">Alamat: Jl. Contoh No. 456, Bandung</p>
-                        <p class="mb-1">Tanggal Lahir: 10 Februari 2001</p>
-                        <p class="mb-1">Jenis Kelamin: Perempuan</p>
+                        <p class="mb-1">Alamat: Jl. Ambarukmo No. 10, Majenang</p>
+                        <p class="mb-1">Tanggal Lahir: 15 Mei 2005</p>
+                        <p class="mb-1">Jenis Kelamin: Laki-laki</p>
                         <p class="mb-2">Status: Aktif</p>
                         <div>
-                            <a href="https://instagram.com/siti_ig" target="_blank" class="text-dark me-2"><i class="bi bi-instagram fs-4"></i></a>
-                            <a href="https://github.com/siti_github" target="_blank" class="text-dark"><i class="bi bi-github fs-4"></i></a>
+                            <a href="https://instagram.com/garawins_" target="_blank" class="text-dark me-2"><i class="bi bi-instagram fs-4"></i></a>
+                            <a href="https://github.com/garawins" target="_blank" class="text-dark"><i class="bi bi-github fs-4"></i></a>
                         </div>
                     </div>
                 </div>
@@ -524,7 +514,7 @@ if(isset($_SESSION['login']) && $_SESSION['login'] === true) {
                 <div class="col-md-4 text-center mb-3 mb-md-0">
                 <a href="https://instagram.com/eKTPRemaja" target="_blank" class="text-dark me-3" title="Instagram"><i class="bi bi-instagram fs-5"></i></a>
                 <a href="mailto:e-ktpremaja@gmail.com" class="text-dark me-3" title="Email"><i class="bi bi-envelope-fill fs-5"></i></a>
-                <a href="https://github.com/eKTPRemaja" target="_blank" class="text-dark" title="GitHub"><i class="bi bi-github fs-5"></i></a>
+                <a href="https://github.com/maul-PG/ktp" target="_blank" class="text-dark" title="GitHub"><i class="bi bi-github fs-5"></i></a>
                 </div>
                 <div class="col-md-4 text-md-end text-center">
                 <small class="text-muted">&copy; 2025 e-KTP Remaja. All rights reserved.</small>
